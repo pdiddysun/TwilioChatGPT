@@ -3,6 +3,7 @@ from twilio.twiml.messaging_response import MessagingResponse
 from .chatbot import askgpt, start_chat_log
 
 app = Flask(__name__)
+app.config['SECRET_KEY'] = 'qyvsAbcVPG5M7dS9'
 
 @app.route('/bot', methods=['POST'])
 def bot():
