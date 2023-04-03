@@ -1,6 +1,6 @@
 from flask import Flask, request, session
 from twilio.twiml.messaging_response import MessagingResponse
-from chatbot import askgpt, start_chat_log
+from .chatbot import askgpt, start_chat_log
 
 app = Flask(__name__)
 
